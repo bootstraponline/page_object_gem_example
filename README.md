@@ -1,12 +1,6 @@
-ruby_webdriver_example
+page_object_gem_example
 ======================
 
-Simple example of ruby webdriver.
+Example of using the [page_object](https://github.com/cheezy/page-object) gem with appium for mobile testing on iOS.
 
---
-
-#### [Selenium IDE](http://www.seleniumhq.org/projects/ide/) vs [Selenium Builder](http://sebuilder.github.io/se-builder/)
-
-I recommend builder.
-
-![](./doc/ide_vs_builder.png)
+The page_object gem is specifically designed for web testing so I don't recommend it be used with appium.
