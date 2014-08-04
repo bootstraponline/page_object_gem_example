@@ -1,10 +1,6 @@
 module Pages
   class Buttons
     include PageObject
-      button :round_button, id: 'RoundedTextField'
-
-      def goto
-        $driver.name('Buttons, Various uses of UIButton').click
-      end
+    button :button_uses, xpath: "//*[@visible=\"true\" and contains(translate(@name,\"BUTTONS\",\"buttons\"), \"buttons\")]"
   end
 end

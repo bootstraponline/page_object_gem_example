@@ -1,13 +1,11 @@
-# -- gems
 require 'rubygems'
 require 'selenium-webdriver'
-require 'spec' # https://github.com/bootstraponline/spec
+require 'spec' # https://github.com/appium/spec
 require 'page-object'
 require 'test_runner'
-# --
 
-load_appium_txt file: File.expand_path('..',__FILE__), verbose: true
-Appium::Driver.new(debug: true, wait: 30).start_driver
+opts = Appium.load_appium_txt file: File.expand_path('..', __FILE__), verbose: true
+Appium::Driver.new(opts).start_driver
 
 # load page objects
 require_relative 'pages/buttons'
